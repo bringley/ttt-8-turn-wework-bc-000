@@ -9,3 +9,9 @@ puts "Welcome to Tic Tac Toe!"
 
 # display board
 display_board(board)
+
+# first turn
+turn(board)
+
+#record input
+input = gets.strip
