@@ -13,5 +13,6 @@ display_board(board)
 # first turn
 turn(board)
 
-#record input
-input = gets.strip
+# record input
+# input = gets.strip
+# move this to ../lib/turn #turn
