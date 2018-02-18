@@ -13,14 +13,16 @@
 def turn(board) 
   puts "Please enter 1-9:"
   input = gets.strip
-  # convert input to integer index
-  def input_to_index(input)
-    index = input.to_i - 1 
-  end
+  input_to_index(input)
   if !valid_move?(board, index)
     puts "I'm sorry - you entered an invalid move!"
     turn(board)
   end
+end
+
+# convert input to integer index
+def input_to_index(input)
+  index = input.to_i - 1
 end
 
 # print out the current state of the board 
