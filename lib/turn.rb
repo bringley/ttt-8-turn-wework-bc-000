@@ -14,8 +14,10 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
-  if !valid_move?(board, index)
-    puts "I'm sorry - you entered an invalid move!"
+  if valid_move?(board, index)
+    move(board, index, token = "X")
+    display_board(board)
+    else
     turn(board)
   end
 end
